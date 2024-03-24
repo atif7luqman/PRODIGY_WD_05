@@ -1,0 +1,46 @@
+body {
+    color: white;
+}
+.background {
+    background-image: url('R.jpeg');
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+    height: 100vh;/* You can add more background properties like background-repeat, background-color, etc. as needed */
+}
+
+.weather-app {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 30px;
+    margin: 30px; /* Set height to viewport height for vertical centering */
+}
+
+.weather-info, .weather-data {
+    background-color: rgba(16, 19, 18, 0.8);
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.forecast {
+    text-align: center;
+}
+
+.forecast-list {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.forecast-item {
+    background-color: rgba(16, 19, 18, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
